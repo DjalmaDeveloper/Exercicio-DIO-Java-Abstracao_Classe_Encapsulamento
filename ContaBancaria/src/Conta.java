@@ -9,12 +9,11 @@ public class Conta {
         this.saldo = saldo;
         if (saldo <= 500.0) {
             this.chequeEspecial = 50.0;
-            this.limiteChequeEspecial = chequeEspecial;
         }
         else{
             this.chequeEspecial = saldo * 0.5;
-            this.limiteChequeEspecial = chequeEspecial;
         }
+        this.limiteChequeEspecial = this.chequeEspecial;
         this.chequeEspecialAtivo = false;
     }
 
